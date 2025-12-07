@@ -1,1 +1,132 @@
-<h1>Hello GitHub Pages!</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的漂亮网页</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* 全局样式 */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    /* 顶部导航 */
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* 主体 */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* 欢迎标题 */
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #4a90e2;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    /* 卡片布局 */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #4a90e2;
+    }
+    .card p {
+      color: #555;
+    }
+
+    /* 底部 */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #eee;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>我的网站</h1>
+    <nav>
+      <a href="#">首页</a>
+      <a href="#">关于</a>
+      <a href="#">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h2>欢迎来到我的漂亮网页</h2>
+      <p>这是一个简单响应式网页示例，适合 GitHub Pages 部署。</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>特色 1</h3>
+        <p>这里是特色内容描述，可以写一些你的项目或者服务亮点。</p>
+      </div>
+      <div class="card">
+        <h3>特色 2</h3>
+        <p>这是第二个卡片，展示你的另一个亮点或功能。</p>
+      </div>
+      <div class="card">
+        <h3>特色 3</h3>
+        <p>第三个卡片，让网页内容更加丰富和美观。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 我的漂亮网页. 版权所有.
+  </footer>
+</body>
+</html>
